@@ -1,0 +1,40 @@
+h1,h3,p,footer{
+    letter-spacing: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-align: center;    
+}
+
+h1{
+    animation: text 3s 1;
+}
+
+@keyframes text{
+    0%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+footer{
+    float: left;
+    margin-top: 250px;
+    
+}
+
+#input1,#input2{
+    width: 50px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(128,128,192) ,rgb(255,0,128) );
+}
+
+div{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
