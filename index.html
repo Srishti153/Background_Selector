@@ -1,27 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Background Selector</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
 
-    <body>
-        <div id="container">
-        <h1>BACKGROUND SELECTOR</h1><br>
-        
-        <h3>COLOR 1</h3><br>
-        <input type="color" id="input1" name="color1" value="rgb(128,128,128)">
-        <h3>COLOR 2</h3>
-        <input id="input2" type="color" name="color2" value="rgb(0,0,0)">
-        </div>
-        
-        <div id="section">
-        <h3>THIS IS THE SELECTED BACKGROUND</h3>
-        <p></p>
-        </div>
+<head>
+	<title>Background Selector</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-        <footer>MADE BY: SRISHTI KAMRA</footer>
-        
-        <script src="script.js"></script>
-    </body>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<a class="navbar-brand headings f-text n-text" href="#">
+				<img class="navbar-brand"
+					src="https://images.twinkl.co.uk/tw1n/image/private/s--MPYcXmMX--/c_fill,q_auto:eco,w_600/v1/create/library/Equivalent-Fraction-Decimal-Percentage-Wheel--Fractions-Maths-Shapes-Colours-KS2.png"
+					width="40" height="40" class="d-inline-block align-text-top">
+				</img>
+				Background Selector
+			</a>
+		</div>
+	</nav></br>
+	<!-- Navbar -->
+
+	<!-- Instructions -->
+	<div class="container ml-3">
+		<h3 class="theme-color headings">Instructions:</h3><br>
+		<h6 class="headings">1: Select color 1 and color 2 from the below selectors.</h6>
+		<h6 class="headings">2: Hit the "Find Gradient" button and voila, you get your desired gradient color!</h6>
+		<h6 class="headings">3: Adjust the colors so as to get the best gradient background that suits you.</h6>
+		<h6 class="headings">4: Finally, use the code for the selected gradient and use it in your projects to get
+			vibrant backgrounds.</h6></br>
+		<hr></hr></br>
+		<h3 class="text-center  headings">Select Colors:</h3></br>
+		<div class="row">
+			<div class="col-sm-4 mb-3 mb-sm-0 mx-auto">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title headings">Color 1:</h5>
+						<input type="color" id="input1" name="color1">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 mx-auto">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title headings">Color 2:</h5>
+						<input id="input2" type="color" name="color2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></br></br></br>
+	<!-- Instructions -->
+
+	<!-- Result -->
+	<div class="d-grid gap-2 col-2 mx-auto">
+		<button id="gradient-button" class="btn btn-primary headings" type="button" id="button-addon1"
+			onclick="changeBackground()">Find Gradient</button>
+	</div></br></br>
+	<h5 class="text-center headings" id="text1"></h5></br>
+	<div class="container" id="box"></div></br></br>
+	<h5 class="text-center headings" id="text2"></h5></br>
+	<h6 class="text-center" id="code"></h6></br></br>
+	<!-- Result -->
+
+	<!-- Footer -->
+	<footer class="text-center footer mt-5">
+		<section class="text-center">
+			<div class=" pt-4">
+				<div class="">
+					<p class="text-center f-text">Github Repo:&nbsp
+						<a class="f-text"
+							href="https://github.com/Srishti153/Background_Selector">https://github.com/Srishti153/Background_Selector</a>
+					</p>
+					<p class="text-center f-text">© 2019 - Developed by&nbsp
+						<a class="f-text" href="https://github.com/Srishti153/"> Srishti Kamra</a>
+					</p>
+				</div>
+			</div>
+		</section></br>
+	</footer>
+	<!-- Footer -->
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+		integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+		crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+
 </html>
