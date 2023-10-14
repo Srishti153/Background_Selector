@@ -1,40 +1,91 @@
-h1,h3,p,footer{
-    letter-spacing: 3px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    text-align: center;    
-}
-
-h1{
-    animation: text 3s 1;
-}
-
-@keyframes text{
-    0%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
-}
-
-footer{
-    float: left;
-    margin-top: 250px;
-    
-}
-
-#input1,#input2{
-    width: 50px;
+#input1,
+#input2 {
+    width: 100px;
     text-align: center;
     margin: auto;
     display: block;
 }
 
-body{
-    background-image: linear-gradient(to right, rgb(128,128,192) ,rgb(255,0,128) );
+#box {
+    height: 100px;
+    width: 100px;
 }
 
-div{
-    display: inline;
-    align-items: center;
-    justify-content: center;
+#code {
+    font-family: courier new;
+}
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.headings {
+    font-family: cursive !important;
+}
+
+.navbar {
+    background: linear-gradient(to right, rgb(51, 51, 51), rgb(51, 51, 51));
+    height: 80px !important;
+}
+
+.theme-color {
+    background: linear-gradient(to right, rgb(2, 170, 176), rgb(0, 205, 172));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, rgb(2, 170, 176), rgb(0, 205, 172)) !important;
+}
+
+.footer {
+    background: linear-gradient(to right, rgb(51, 51, 51), rgb(51, 51, 51));
+}
+
+.f-text {
+    color: white !important;
+    text-decoration: none;
+}
+
+.n-text {
+    font-size: x-large !important;
+}
+
+.btn-primary {
+    border: 1px solid transparent !important;
+    border-radius: .75rem !important;
+    box-sizing: border-box !important;
+    color: #FFFFFF !important;
+    cursor: pointer !important;
+    flex: 0 0 auto !important;
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    line-height: 1.5rem !important;
+    padding: .75rem 1.2rem !important;
+    text-align: center !important;
+    text-decoration: none #6B7280 solid !important;
+    text-decoration-thickness: auto !important;
+    transition-duration: .2s !important;
+    transition-property: background-color, border-color, color, fill, stroke !important;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1) !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    touch-action: manipulation !important;
+    width: auto !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(195, 220, 223) !important;
+}
+
+.btn-primary:focus {
+    box-shadow: none !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 2px !important;
+}
+
+@media (min-width: 768px) {
+    .btn-primary {
+        padding: .75rem 1.5rem !important;
+    }
 }
